@@ -1,11 +1,12 @@
 {
-  "name": "react-example",
+  "name": "eduquest",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "concurrently \"vite --port=3000 --host=0.0.0.0\" \"tsx server.ts\"",
-    "build": "vite build",
+    "build": "vite build && tsc server.ts --outDir dist --module esnext --target esnext --moduleResolution node",
+    "start": "node dist/server.js",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
@@ -36,7 +37,6 @@
     "autoprefixer": "^10.4.21",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.21.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "typescript": "~5.8.2"
   }
 }
