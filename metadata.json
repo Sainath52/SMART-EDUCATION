@@ -1,0 +1,5 @@
+{
+  "name": "EduQuest",
+  "description": "A gamified learning platform for K-12 students that turns any topic into an interactive quest using AI.",
+  "requestFramePermissions": ["microphone"]
+}
