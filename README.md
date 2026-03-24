@@ -1,20 +1,30 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
+
+# Eduquest AI 🚀
+*Next-Generation Intelligent Learning Assistant*
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+## 📖 Overview
+**Eduquest** is a custom AI-driven application designed to enhance educational workflows and information retrieval. Leveraging the power of the Groq API, Eduquest provides a streamlined, user-centric interface for managing complex data and generating real-time insights for students and developers alike.
 
-View your app in AI Studio: https://ai.studio/apps/f85e1cb8-3af5-4a0b-b2b0-68ee8e4d2a33
+## 🛠️ Tech Stack
+* **Frontend:** React.js / Next.js
+* **Backend:** Node.js 
+* **API Integration:** Google Gemini AI
+* **Database (Optional):** SQL / PostgreSQL
+* **Styling:** Tailwind CSS
 
-## Run Locally
+## ⚡ Quick Start
 
-**Prerequisites:**  Node.js
+### 1. Prerequisites
+Ensure you have **Node.js** (v18.x or higher) installed on your machine.
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 2. Installation
+Clone the repository and install the dependencies:
+```bash
+git clone [https://github.com/Sainath52/eduquest.git](https://github.com/Sainath52/eduquest.git)
+cd eduquest
+npm install
