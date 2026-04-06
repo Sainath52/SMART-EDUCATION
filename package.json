@@ -7,7 +7,7 @@
     "dev": "concurrently \"vite --port=3000 --host=0.0.0.0\" \"tsx server.ts\"",
     "build": "vite build && tsc server.ts --outDir dist --module esnext --target esnext --moduleResolution node",
     "start": "node dist/server.js",
-    "render-build": "npm install && tsc server.ts --outDir dist --module esnext --target esnext --moduleResolution node --skipLibCheck --noEmitOnError false",
+    "render-build": "npm install && tsc server.ts --outDir dist --module esnext --target esnext --moduleResolution node --skipLibCheck --esModuleInterop",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"

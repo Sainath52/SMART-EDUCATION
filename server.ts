@@ -1,7 +1,8 @@
 import express from 'express';
-import mysql from 'mysql2/promise';
+import * as mysql from 'mysql2/promise';
+import * as dotenv from 'dotenv';
 import cors from 'cors';
-import dotenv from 'dotenv';
+
 
 dotenv.config(); // Environment variables-ah load panna
 
