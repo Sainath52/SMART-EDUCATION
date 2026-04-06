@@ -1,7 +1,8 @@
 import express from 'express';
 import * as mysql from 'mysql2/promise';
-import * as dotenv from 'dotenv';
 import cors from 'cors';
+import * as dotenv from 'dotenv';
+
 
 
 dotenv.config(); // Environment variables-ah load panna
@@ -11,10 +12,11 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // 1. CORS Fix: Frontend URL-ah allow pannunga
+// Indha maari irukannu check pannunga
 app.use(cors({
-  origin: ['https://smart-education-1-k5zg.onrender.com', 'http://localhost:5173'],
-  methods: ['GET', 'POST'],
-  credentials: true
+  origin: '*', // Ellaa side-la irundhum access allow panna '*' kudunga
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 app.use(express.json());
