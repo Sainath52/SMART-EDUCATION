@@ -19,12 +19,11 @@ app.use(express.json());
 
 // Database Connection
 const pool = mysql.createPool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  host: process.env.DB_HOST || 'localhost',
+  user: process.env.DB_USER || 'root',
+  password: process.env.DB_PASSWORD || 'SanthiyaSainath',
+  database: process.env.DB_NAME || 'eduquest',
   port: Number(process.env.DB_PORT) || 3306,
-  ssl: { rejectUnauthorized: false }
 });
 
 // --- ROUTES ---
